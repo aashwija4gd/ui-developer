@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "UI Generation Violations",
+  "type": "object",
+  "properties": {
+    "violations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["rule", "file", "line", "found", "expected"],
+        "properties": {
+          "rule": { "type": "string" },
+          "file": { "type": "string" },
+          "line": { "type": "integer", "minimum": 1 },
+          "found": { "type": "string" },
+          "expected": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["violations"],
+  "additionalProperties": false
+}
+

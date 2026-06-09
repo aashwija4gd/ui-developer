@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Developer"
+  short_description: "Generate repo-consistent UI code"
+  default_prompt: "Use $SKILL.md to generate or repair repository-consistent UI code."
+
+policy:
+  allow_implicit_invocation: true
